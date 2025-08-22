@@ -1,41 +1,31 @@
+BashFist is a simple Bash script for recon and bug bounty.
+It runs many tools together and saves all results into one single file.
+So you don’t need to run tools one by one.
 
-Bashfist-github-repo
-OneMan
+ Features
 
-OneMan — An unconventional, live-output Bash web pentesting tool.
+Finds subdomains
 
-Features
+Scans open ports
 
-Live-only output (no files written by default)
+Detects live hosts
 
-Shallow crawl + parameter discovery
+Collects URLs and endpoints
 
-Advanced XSS payloads + reflection/context hints
+Finds JavaScript files and hidden APIs
 
-Error-based, boolean-diff, timing-based SQLi checks
+Saves everything into one report file
 
-Auto-run sqlmap (if present) with recommended flags
+Installation
 
-Advanced LFI / path traversal payloads
+Clone and setup:
 
-Header fuzzing, parameter mutation fuzzing
-
-JS file endpoint & source-map analyzer
-
-Multipart/form-data XSS probing
-
-Ctrl-C handling to skip long-running tools and continue
-
-Requirements
-
-bash (GNU bash)
-
-curl
-
-python3 (for URL encoding helper)
-
-sqlmap (optional — script will skip if not present)
+git clone https://github.com/<your-username>/BashFist.git
+cd BashFist
+chmod +x bashfist.sh
 
 Usage
-chmod +x oneman.sh
-./oneman.sh <target_url> [--stealth]
+
+Run with:
+
+./bashfist.sh example.com
