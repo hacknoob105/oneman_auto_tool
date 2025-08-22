@@ -1,7 +1,7 @@
 # oneman_outo_tool  
 is a simple Bash script for recon and bug bounty.
 It runs many tools together and saves all results into one single file.
-So you don’t need to run tools one by one.
+So you don’t need to run tools one by one.This tool also do exploit.Sql,xss,LFI,
 
  Features
 
