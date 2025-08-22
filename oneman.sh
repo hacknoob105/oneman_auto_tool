@@ -1,18 +1,9 @@
 #!/bin/bash
-# =====================================================
-#  BashFist - Unconventional Web Pentesting Tool (Live Output, No Files)
-#  Author: Your Name
-#  Usage: ./bashfist.sh <target_url> [--stealth]
-#  Notes:
-#    - For authorized testing only.
-#    - No output is saved; everything prints live to terminal.
-#    - Requires: curl, python3, sqlmap (optional but used if present).
-# =====================================================
 
-# ---------- Colors ----------
+#  Colors 
 RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'; BLUE='\033[0;34m'; CYAN='\033[0;36m'; NC='\033[0m'
 
-# ---------- Args ----------
+# Args 
 if [ -z "$1" ]; then
   echo -e "${RED}[!] Usage: $0 <target_url> [--stealth]${NC}"
   exit 1
@@ -23,7 +14,7 @@ for a in "$@"; do
   [[ "$a" == "--stealth" ]] && STEALTH=true
 done
 
-# ---------- Global control for skipping current tool on Ctrl-C ----------
+# Global control for skipping current tool on Ctrl-C 
 SKIP_CURRENT=0
 CHILD_PID=""
 on_sigint() {
