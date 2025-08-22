@@ -1,4 +1,5 @@
-oneman_outo_tool  is a simple Bash script for recon and bug bounty.
+# oneman_outo_tool  
+is a simple Bash script for recon and bug bounty.
 It runs many tools together and saves all results into one single file.
 So you don’t need to run tools one by one.
 
@@ -16,16 +17,16 @@ Finds JavaScript files and hidden APIs
 
 Saves everything into one report file
 
-Installation
+# Installation
 
 Clone and setup:
 
-git clone https://github.com/<your-username>/BashFist.git
-cd BashFist
-chmod +x bashfist.sh
+git clone https://github.com/<your-username>/oneman_auto_tool.git
+cd oneman.sh
+chmod +x oneman.sh
 
-Usage
+# Usage
 
 Run with:
 
-./bashfist.sh example.com
+./oneman.sh example.com
